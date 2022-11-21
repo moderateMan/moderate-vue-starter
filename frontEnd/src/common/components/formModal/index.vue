@@ -20,7 +20,6 @@ import FormItem, { type FormItemT } from '@/common/components/formItem/index.vue
 const props = defineProps<{ handleSubmit: (permissions: string[]) => void, form: any, formItems: FormItemT[], visible: boolean, handleClose: () => void, title: string }>()
 const { form, visible, handleClose, title, formItems } = toRefs(props);
 
-
 const formValues = ref<any>({})
 const processFormItems = (arr: FormItemT[]) => {
     let result: FormItemT[][] = [];

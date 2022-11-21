@@ -41,9 +41,10 @@ export type TreePropsT = Partial<{
 const props = defineProps<{ formValues: any, formData: FormItemT }>()
 // const { handleChange } = props;
 const { formData, formValues } = toRefs(props)
+
 const { id, config } = toRefs(formData.value);
 const treeRef = ref()
-
+debugger
 const handleCheck = (checkKeys: string[]) => {
     // handleChange(checkKeys)
 }
